@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>CleanHub Products</title>
+        <style>
+            body{
+                font-family:Arial, sans-serif;
+                max-width:600px;
+                margin: 30px auto;
+                background: #f1b4f7;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(19, 17, 17, 0.1);
+            }
+            h1{
+                text-align: center;
+                color: #333;
+            }
+
+            form{
+                display: flex;
+                gap: 10px;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            input,button,select{
+                padding:8px;
+                border:1px solid #ccc;
+                border-radius: 6px;
+            }
+
+            input:focus{
+                outline:none;
+                border-color: #ee39c7;
+            }
+
+            button{
+                background-color: #ee39c7;
+                color: rgb(26, 24, 25);
+                cursor: pointer;
+                border: none;
+                transition: 0.2s ease;
+            }
+
+            button:hover{
+                background-color: #ee39c7;
+            }
+
+            ul{
+                list-style: none;
+                padding: 0;
+            }
+
+            li{
+                background-color: rgb(238, 167, 252);
+                border-radius: 6px;
+                padding: 12px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            }
+            li button{
+                margin-left: 10px;
+                background-color: #ee39c7;
+            }
+
+            li button:hover{
+                background-color: #ee39c7;
+            }
+            li button:nth-child(3):hover{
+                background-color: #ee39c7;
+            } 
+            li button:nth-child(3):hover{
+                background-color: #ee39c7;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Product List</h1>
+        <ul id="productList"></ul>
+
+        <h2>Add New Product</h2>
+        <form id="productForm">
+            <input type="text" id="name"
+            placeholder="Product Name" required/>
+            <input type="number" id="price"
+            placeholder="Price" required/>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Home">Home</option>
+                <option value="kitchen">Kitchen</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Office">Office</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
